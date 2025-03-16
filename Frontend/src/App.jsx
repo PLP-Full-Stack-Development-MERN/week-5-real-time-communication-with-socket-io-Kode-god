@@ -4,7 +4,7 @@ import axios from 'axios';
 import NoteEditor from './components/NoteEditor';
 import OnlineUsers from './components/OnlineUsers';
 
-const socket = io('http://localhost:5000'); // Backend URL
+const socket = io('https://week-5-real-time-communication-with-fkoo.onrender.com'); // Backend URL
 
 const App = () => {
   const [roomId, setRoomId] = useState('');
@@ -19,7 +19,7 @@ const App = () => {
       socket.emit('joinRoom', roomIdFromUrl);
 
       // Fetch existing note
-      axios.get(`http://localhost:5000/api/notes/${roomIdFromUrl}`)
+      axios.get(`https://week-5-real-time-communication-with-fkoo.onrender.com/${roomIdFromUrl}`)
         .then((res) => setNoteContent(res.data.content || ''))
         .catch((err) => console.error(err));
     }
