@@ -19,4 +19,6 @@ Step 3: Set Up the Frontend
   c. Start the frontend development server:npm run dev
 
 Open your browser and navigate to http://localhost:5173?roomId=test-room to test the application locally on your machine.
+
+the deployment link for this project is https://github.com/Kode-god/week-5-real-time-communication-with-socket-io-Kode-god.git
 >>>>>>> e964e5c (first commit)
